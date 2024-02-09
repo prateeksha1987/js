@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  Enter your name        <input type="text"  id="name"  ><br><br>
+
+  Enter your password    <input type="number"  id="pass"><br><br>
+   Enter your email      <input type="email"  id="email"><br><br>
+   Enter your contact number<input type="number"  id="contact"><br><br>
+   Enter your address    <input type="text"  id="add"><br><br>
+   <!-- Gender <input type="checkbox" id="mf"> -->
+   <button type="button" value="submit" onclick="data()" >submit</button>
+   <table width="600px" border="1px">
+    <tr>
+        <td>name</td>
+        <td>password</td>
+        <td>email</td>
+        <td>contact</td>
+        <td>address</td>
+        <!-- <td>gender</td> -->
+
+    </tr>
+    <tr>
+        <td id="name1"></td>
+        <td id="pass1"></td>
+        <td id="email1"></td>
+        <td id="contact1"></td>
+        <td id="add1"></td>
+        <!-- <td id="mf"></td> -->
+
+    </tr>
+   </table>
+  
+   <script>
+     function data(){
+    var name=document.getElementById("name").value;
+    var pass=document.getElementById("pass").value;
+
+    var email=document.getElementById("email").value;
+
+    var contact=document.getElementById("contact").value;
+
+    var add=document.getElementById("add").value;
+    var check="prateeksha";
+    var mail="pra@gmail.com";
+var ads="ayodhya nagar";
+// var gender=document.getElementById("gender").value;
+if(name==check && pass==1212 && email==mail && contact==9999999999 && add==ads){
+    document.getElementById("name1").innerHTML=name;
+    document.getElementById("pass1").innerHTML=pass;
+    document.getElementById("email1").innerHTML=email;
+    document.getElementById("contact1").innerHTML=contact;
+    document.getElementById("add1").innerHTML=add;
+}
+else{
+    alert("wrong ");
+}
+// if(gender==male){
+//     document.getElementById("mf").innerHTML=gender;
+// }
+// elseif{
+//     document.getElementById("mf").innerHTML=gender;
+// }
+
+    }
+   </script>
+</body>
+</html>
